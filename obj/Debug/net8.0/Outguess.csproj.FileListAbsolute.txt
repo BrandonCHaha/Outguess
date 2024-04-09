@@ -1,0 +1,14 @@
+C:\Users\MCA-24\source\repos\Projects\Outguess\bin\Debug\net8.0\Outguess.exe
+C:\Users\MCA-24\source\repos\Projects\Outguess\bin\Debug\net8.0\Outguess.deps.json
+C:\Users\MCA-24\source\repos\Projects\Outguess\bin\Debug\net8.0\Outguess.runtimeconfig.json
+C:\Users\MCA-24\source\repos\Projects\Outguess\bin\Debug\net8.0\Outguess.dll
+C:\Users\MCA-24\source\repos\Projects\Outguess\bin\Debug\net8.0\Outguess.pdb
+C:\Users\MCA-24\source\repos\Projects\Outguess\obj\Debug\net8.0\Outguess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MCA-24\source\repos\Projects\Outguess\obj\Debug\net8.0\Outguess.AssemblyInfoInputs.cache
+C:\Users\MCA-24\source\repos\Projects\Outguess\obj\Debug\net8.0\Outguess.AssemblyInfo.cs
+C:\Users\MCA-24\source\repos\Projects\Outguess\obj\Debug\net8.0\Outguess.csproj.CoreCompileInputs.cache
+C:\Users\MCA-24\source\repos\Projects\Outguess\obj\Debug\net8.0\Outguess.dll
+C:\Users\MCA-24\source\repos\Projects\Outguess\obj\Debug\net8.0\refint\Outguess.dll
+C:\Users\MCA-24\source\repos\Projects\Outguess\obj\Debug\net8.0\Outguess.pdb
+C:\Users\MCA-24\source\repos\Projects\Outguess\obj\Debug\net8.0\Outguess.genruntimeconfig.cache
+C:\Users\MCA-24\source\repos\Projects\Outguess\obj\Debug\net8.0\ref\Outguess.dll
