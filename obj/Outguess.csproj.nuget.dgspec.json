@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MCA-24\\source\\repos\\Projects\\Outguess\\Outguess.csproj": {}
+    "C:\\Users\\MCA-24\\Documents\\GitHub\\Outguess\\Outguess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MCA-24\\source\\repos\\Projects\\Outguess\\Outguess.csproj": {
+    "C:\\Users\\MCA-24\\Documents\\GitHub\\Outguess\\Outguess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MCA-24\\source\\repos\\Projects\\Outguess\\Outguess.csproj",
+        "projectUniqueName": "C:\\Users\\MCA-24\\Documents\\GitHub\\Outguess\\Outguess.csproj",
         "projectName": "Outguess",
-        "projectPath": "C:\\Users\\MCA-24\\source\\repos\\Projects\\Outguess\\Outguess.csproj",
+        "projectPath": "C:\\Users\\MCA-24\\Documents\\GitHub\\Outguess\\Outguess.csproj",
         "packagesPath": "C:\\Users\\MCA-24\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MCA-24\\source\\repos\\Projects\\Outguess\\obj\\",
+        "outputPath": "C:\\Users\\MCA-24\\Documents\\GitHub\\Outguess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MCA-24\\AppData\\Roaming\\NuGet\\NuGet.Config",

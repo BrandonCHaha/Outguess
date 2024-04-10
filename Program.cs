@@ -16,7 +16,7 @@
                 int guesses = 7;
                 int strikes = 1;
                 Random rng = new Random();
-                cpuNum = rng.Next(1, 100);
+                cpuNum = rng.Next(1, 101);
 
                 Fancify("WELCOME TO EVIL OUTGUESS");
                 Console.WriteLine("\n\nInput a number between 1 and 100 and guess the evil computer's number. You only have 7 guesses so make 'em count!!\nDon't pull anything funny or you'll lose guesses!");
@@ -90,6 +90,7 @@
             bool hasBust = false;
             int playerNum = 0;
             int cpuNum = 0;
+            int[] wagerMultiplier = {0, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
             double wins = 0;
             double rounds = 0;
             double playerBet = 0;
@@ -97,8 +98,8 @@
             char cont = ' ';
 
                 Fancify("WELCOME TO EVIL OUTGUESS");
-                Console.WriteLine("\n\nThe Evil Computer will think of a number between 1 and 100.\nIt is your goal to guess the right number before your guesses run out!!");
-                Console.WriteLine("\nThis time, however, you will choose the amount of guesses! Between 1 and 10!!");
+                Console.WriteLine("\n\nThe Evil Computer will think of a number between 1 and 100.\nIt is your goal to guess the right number before your guesses run out!");
+                Console.WriteLine("\nThis time, you will choose the amount of guesses between 1 and 10.");
             doesContinue = false;
             while (doesContinue == false) {
                 playerCash = PromptDouble("\nPlease input the amount of cash you're bringing to the outguess table: $");
@@ -114,9 +115,9 @@
                 int strikes = 1;
                 int guessWinnings = 0;
                 bool isCheating = true;
-                bool betOver = true;
+                bool betOver = false;
                 Random rng = new Random();
-                cpuNum = rng.Next(1, 100);
+                cpuNum = rng.Next(1, 101);
 
                 while (isCheating == true) {
                     guesses = PromptInt("\nGuesses: ");
@@ -124,20 +125,19 @@
                             Console.WriteLine("NO CHEATING");
                         } else {
                             isCheating = false;
-                            int[] wagerMultiplier = {0, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
                             guessWinnings = wagerMultiplier[guesses];
 
                         }//END IF ELSE
                 }//END GUESS VALID LOOP
 
-                while (betOver == true) {
+                while (betOver == false) {
                     playerBet = PromptDouble("\nBet: $");
                     if (playerBet > playerCash) {
-                        Console.WriteLine("Your bet cannot be higher than the cash you brought.");
+                        Console.WriteLine($"Your bet cannot be higher than your total cash, ${playerCash}.");
                     } else if (playerBet < 1){
                         Console.WriteLine("Your bet has to be a positive number.");
                     }else {
-                        betOver = false;
+                        betOver = true;
                     }//END IF ELSE
                 }//END BET VALID LOOP
                 Console.WriteLine("\nNow let the guessing begin!!\n");
@@ -181,7 +181,7 @@
                             isValid = true;
                             Console.Clear();
                         } else {
-                            Console.WriteLine("\nC'mon its 'y' or 'n'. You know this. Try again.");
+                            Console.WriteLine("\nC'mon its 'y' or 'n'. Try again.");
                             isValid = false;
 
                         }//END IF ELSE CONT
@@ -215,7 +215,7 @@
                                 isValid = true;
                                 Console.Clear();
                             } else {
-                                Console.WriteLine("\nC'mon its 'y' or 'n'. You know this. Try again.");
+                                Console.WriteLine("\nC'mon its 'y' or 'n'. Try again.");
                                 isValid = false;
                             }//END IF ELSE CONT
                         }//END ISVALID LOOP
