@@ -45,11 +45,11 @@
                     while (isValid == false) {
                         Console.WriteLine("Would you like to play again?(y/n) ");
                         cont = Console.ReadKey(true).KeyChar;
-                        if (cont == 'n') {
+                        if (cont == 'n' || cont == 'N') {
                             Console.WriteLine("\nWhatever I didn't want to anyway pshh");
                                 doesContinue = false;
                                 isValid = true;
-                        } else if (cont == 'y') {
+                        } else if (cont == 'y' || cont == 'Y') {
                                 doesContinue = true;
                                 isValid = true;
                                 Console.Clear();
@@ -68,11 +68,11 @@
                     while (isValid == false) {
                     Console.WriteLine("\nYou wanna play again?(y/n) ");
                     cont = Console.ReadKey(true).KeyChar;
-                        if (cont == 'n') {
+                        if (cont == 'n' || cont == 'N') {
                             Console.WriteLine("\nWhatever, I didn't want to anyway pshh");
                             isValid = true;
                             doesContinue = false;
-                        } else if (cont == 'y') {
+                        } else if (cont == 'y' || cont == 'Y') {
                             doesContinue = true;
                             isValid = true;
                             Console.Clear();
@@ -97,7 +97,7 @@
             double playerCash = 0;
             char cont = ' ';
 
-                Fancify("WELCOME TO EVIL OUTGUESS");
+                Fancify("WELCOME TO SINISTER OUTGUESS");
                 Console.WriteLine("\n\nThe Evil Computer will think of a number between 1 and 100.\nIt is your goal to guess the right number before your guesses run out!");
                 Console.WriteLine("\nThis time, you will choose the amount of guesses between 1 and 10.");
             doesContinue = false;
@@ -140,7 +140,7 @@
                         betOver = true;
                     }//END IF ELSE
                 }//END BET VALID LOOP
-                Console.WriteLine("\nNow let the guessing begin!!\n");
+                Console.WriteLine("\nNow let the guessing begin.\n");
                 while (guesses > 0) {
                     playerNum = PromptInt("\n");
                     if (playerNum < 0 && strikes <= 0) {
@@ -170,13 +170,13 @@
                     while (isValid == false) {
                         Console.WriteLine("Would you like to play again?(y/n) ");
                         cont = Console.ReadKey(true).KeyChar;
-                        if (cont == 'n') {
+                        if (cont == 'n' || cont == 'N') {
                             Console.ForegroundColor = ConsoleColor.Green;
                             Console.WriteLine($"\n\nGOOD ENDING: You left the evil casino with ${playerCash} and bought a nice sandwich with your winnings.\nWin Percentage: {(wins / rounds) * 100}%");
                             Console.ResetColor();
                             doesContinue = false;
                             isValid = true;
-                        } else if (cont == 'y') {
+                        } else if (cont == 'y' || cont == 'Y') {
                             doesContinue = true;
                             isValid = true;
                             Console.Clear();
@@ -204,13 +204,13 @@
                         while (isValid == false) {
                             Console.WriteLine("\nYou wanna play again?(y/n) ");
                             cont = Console.ReadKey(true).KeyChar;
-                            if (cont == 'n') {
+                            if (cont == 'n' || cont == 'N') {
                                 Console.ForegroundColor = ConsoleColor.Green;
                                 Console.WriteLine($"GOOD ENDING: You left the evil casino with ${playerCash} and bought a nice sandwich with your winnings.\nWin Percentage: {(wins / rounds) * 100}%");
                                 Console.ResetColor();
                                 isValid = true;
                                 doesContinue = false;
-                            } else if (cont == 'y') {
+                            } else if (cont == 'y' || cont == 'Y') {
                                 doesContinue = true;
                                 isValid = true;
                                 Console.Clear();
