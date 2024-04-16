@@ -8,7 +8,7 @@
         }//END MAIN
         static void Outguess() {
             bool doesContinue = true;
-                int playerNum = 0;
+            int playerNum = 0; 
                 int cpuNum = 0;
                 char cont = ' ';
 
@@ -22,10 +22,10 @@
                 Console.WriteLine("\n\nInput a number between 1 and 100 and guess the evil computer's number. You only have 7 guesses so make 'em count!!\nDon't pull anything funny or you'll lose guesses!");
                 while (guesses > 0) {
                     playerNum = PromptInt("\n");
-                    if (playerNum < 0 && strikes <= 0) {
+                    if ((playerNum < 0 || playerNum > 100) && strikes <= 0) {
                         guesses -= 2;
                         Console.WriteLine($"Why did you do this? You've lost your next guess. {guesses} left.");
-                    } else if (playerNum > 100 || playerNum < 1 && strikes > 0) {
+                    } else if ((playerNum > 100 || playerNum < 1) && strikes > 0) {
                         strikes--;
                         Console.WriteLine($"Please remember to input a positive number between 1 and 100.\nNext time it'll count and you'll lose a guess ontop of that!");
                     } else if (playerNum == cpuNum) {
@@ -90,7 +90,7 @@
             bool hasBust = false;
             int playerNum = 0;
             int cpuNum = 0;
-            int[] wagerMultiplier = {0, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
+            int[] wagerMultiplier = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
             double wins = 0;
             double rounds = 0;
             double playerBet = 0;
@@ -125,7 +125,7 @@
                             Console.WriteLine("NO CHEATING");
                         } else {
                             isCheating = false;
-                            guessWinnings = wagerMultiplier[guesses];
+                            guessWinnings = wagerMultiplier[guesses-1];
 
                         }//END IF ELSE
                 }//END GUESS VALID LOOP
@@ -143,10 +143,10 @@
                 Console.WriteLine("\nNow let the guessing begin.\n");
                 while (guesses > 0) {
                     playerNum = PromptInt("\n");
-                    if (playerNum < 0 && strikes <= 0) {
+                    if ((playerNum > 100 || playerNum < 0) && strikes <= 0) {
                         guesses -= 2;
                         Console.WriteLine($"Why did you do this? You've lost your next guess. {guesses} left.");
-                    } else if (playerNum > 100 || playerNum < 1 && strikes > 0) {
+                    } else if ((playerNum > 100 || playerNum < 1) && strikes > 0) {
                         strikes--;
                         Console.WriteLine($"Please remember to input a positive number between 1 and 100.\nNext time it'll count and you'll lose a guess ontop of that!");
                     } else if (playerNum == cpuNum) {

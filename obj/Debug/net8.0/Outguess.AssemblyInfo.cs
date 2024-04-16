@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Outguess")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+40127b00b25103157f2a1655a6319bc9a6fc11ef")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7734acffb6958f595185982980a9fc201d433473")]
 [assembly: System.Reflection.AssemblyProductAttribute("Outguess")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Outguess")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
