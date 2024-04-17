@@ -3,7 +3,27 @@
         static void Main(string[] args) {
 
 
-            OutguessAddendum();
+            int userInput = PromptInt("The evil computer gives you a choice: gambling or no gambling.\n\n1). Normal outguess\t\t2).Gambling Mode\n\n\t");
+            if (userInput == 1) {
+                Console.ForegroundColor = ConsoleColor.DarkRed;
+                Console.WriteLine("Your fate is.... boooooring.");
+                Console.ResetColor();
+                Thread.Sleep(2000);
+                Console.Clear();
+                Outguess();
+
+            } else if (userInput == 2) {
+                Console.ForegroundColor = ConsoleColor.DarkRed;
+                Console.WriteLine("Your fate is.... OOOO YES YES YES MMM MONEY  YESSSSS");
+                Console.ResetColor();
+                Thread.Sleep(2000);
+                Console.Clear();
+                OutguessAddendum();
+            } else {
+                Console.ForegroundColor = ConsoleColor.DarkRed;
+                Console.WriteLine("RUDE");
+                Console.ResetColor();
+            }
 
         }//END MAIN
         static void Outguess() {
